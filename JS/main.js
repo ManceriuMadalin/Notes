@@ -66,9 +66,6 @@ function textarea(task, bgColor) {
           texts.push({ text: text.value });
           localStorage.setItem('texts', JSON.stringify(texts));
      });
-     text.addEventListener("click", () => {
-          text.readOnly = false;
-     });
 }
 
 window.onload = () => {
