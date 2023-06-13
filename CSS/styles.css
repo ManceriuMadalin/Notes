@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+     background-color: #F4EEE0;
+     font-family: 'Indie Flower';
+}
+
+h1 {
+     position: absolute;
+     font-size: 5rem;
+     left: 15%;
+}
+
+#menu {
+     position: absolute;
+     height: 250px;
+     width: 50px;
+     top: 50%;
+     transform: translateY(-50%);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+button {
+     height: 45px;
+     width: 45px;
+     border: none;
+     border-radius: 50%;
+}
+
+button:nth-child(1) {
+     background-color: #ED2B2A;
+}
+
+button:nth-child(2) {
+     background-color: #FC4F00;
+}
+
+button:nth-child(3) {
+     background-color: #00DFA2;
+}
+
+button:nth-child(4) {
+     background-color: #B0DAFF;
+}
+
+button:nth-child(5) {
+     background-color: #D4ADFC;
+}
+
+#main {
+     position: absolute;
+     left: 15%;
+     width: 85vw;
+     margin-top: 250px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+.task {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     height: 45px;
+     width: 45px;
+     border-radius: 50%;
+     transition: all 1s;
+     margin-right: 25px;
+     margin-bottom: 25px;
+}
+
+textarea {
+     resize: none;
+     border: none;
+     width: 90%;
+     height: 90%;
+     outline: none;
+     color: #fff;
+     font-size: 1.5rem;
+     font-family: 'Indie Flower';
+     text-indent: 25px;
+}
