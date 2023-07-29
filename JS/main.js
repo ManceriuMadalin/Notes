@@ -18,23 +18,7 @@ function createTask(bgColor) {
      }, 500);
      textarea(task, bgColor);
 
-     task.addEventListener("dblclick", () => {
-          task.style.opacity = 0
-          const index = tasks.findIndex((t) => t.order === parseInt(task.style.order));
-          console.log(index)
-          tasks.splice(index, 1)
-          texts.splice(index, 1)
-          let i = 1
-          tasks.forEach((t) => {
-               t.order = -i
-               i += 1
-          })
-          localStorage.setItem('tasks', JSON.stringify(tasks));
-          localStorage.setItem('texts', JSON.stringify(texts));
-          setTimeout(() => {
-               task.remove();
-          }, 1000)
-     });
+     attachDblClickEvent(task)
 }
 
 function attachDblClickEvent(task) {
